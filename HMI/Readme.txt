@@ -1,0 +1,1 @@
+Dùng phần mềm Nextion Edittor tại https://nextion.tech/download/nextion-setup-v1-62-2.exe

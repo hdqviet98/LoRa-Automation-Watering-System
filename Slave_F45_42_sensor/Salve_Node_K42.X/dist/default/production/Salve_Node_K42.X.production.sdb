@@ -1,0 +1,2396 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K42 ]
+[d frameptr 16353 ]
+"35 C:\Users\thien\Desktop\Slave_K42_21/modbus/am2315.h
+[e E16004 readData `uc
+START_WAKE_UP 0
+STOP_WAKE_UP 1
+SEND_COMMAND 2
+READ_RSP 3
+CMD_RH 4
+READ_RH 5
+END_READ 6
+]
+"40 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_app_layer_slave.c
+[e E16047 _BOOL `uc
+FALSE 0
+TRUE 1
+]
+"60
+[e E17315 . `uc
+INTEGER 1
+FLOAT 2
+STRING 3
+]
+"74
+[e E17288 . `uc
+MODBUS_GETADDY 0
+MODBUS_GETFUNC 1
+MODBUS_GETDATA 2
+]
+"105
+[e E16944 _function `uc
+FUNC_READ_COILS 1
+FUNC_READ_DISCRETE_INPUT 2
+FUNC_READ_HOLDING_REGISTERS 3
+FUNC_READ_INPUT_REGISTERS 4
+FUNC_WRITE_SINGLE_COIL 5
+FUNC_WRITE_SINGLE_REGISTER 6
+FUNC_READ_EXCEPTION_STATUS 7
+FUNC_DIAGNOSTICS 8
+FUNC_GET_COMM_EVENT_COUNTER 11
+FUNC_GET_COMM_EVENT_LOG 12
+FUNC_WRITE_MULTIPLE_COILS 15
+FUNC_WRITE_MULTIPLE_REGISTERS 16
+FUNC_REPORT_SLAVE_ID 17
+FUNC_READ_FILE_RECORD 20
+FUNC_WRITE_FILE_RECORD 21
+FUNC_MASK_WRITE_REGISTER 22
+FUNC_READ_WRITE_MULTIPLE_REGISTERS 23
+FUNC_READ_FIFO_QUEUE 24
+]
+[e E2 _exception `uc
+ILLEGAL_FUNCTION 1
+ILLEGAL_DATA_ADDRESS 2
+ILLEGAL_DATA_VALUE 3
+SLAVE_DEVICE_FAILURE 4
+ACKNOWLEDGE 5
+SLAVE_DEVICE_BUSY 6
+MEMORY_PARITY_ERROR 8
+GATEWAY_PATH_UNAVAILABLE 10
+GATEWAY_TARGET_NO_RESPONSE 11
+TIMEOUT 12
+]
+"33 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_phy_layer_rtu_slave.c
+[e E16944 _function `uc
+FUNC_READ_COILS 1
+FUNC_READ_DISCRETE_INPUT 2
+FUNC_READ_HOLDING_REGISTERS 3
+FUNC_READ_INPUT_REGISTERS 4
+FUNC_WRITE_SINGLE_COIL 5
+FUNC_WRITE_SINGLE_REGISTER 6
+FUNC_READ_EXCEPTION_STATUS 7
+FUNC_DIAGNOSTICS 8
+FUNC_GET_COMM_EVENT_COUNTER 11
+FUNC_GET_COMM_EVENT_LOG 12
+FUNC_WRITE_MULTIPLE_COILS 15
+FUNC_WRITE_MULTIPLE_REGISTERS 16
+FUNC_REPORT_SLAVE_ID 17
+FUNC_READ_FILE_RECORD 20
+FUNC_WRITE_FILE_RECORD 21
+FUNC_MASK_WRITE_REGISTER 22
+FUNC_READ_WRITE_MULTIPLE_REGISTERS 23
+FUNC_READ_FIFO_QUEUE 24
+]
+[e E2 _exception `uc
+ILLEGAL_FUNCTION 1
+ILLEGAL_DATA_ADDRESS 2
+ILLEGAL_DATA_VALUE 3
+SLAVE_DEVICE_FAILURE 4
+ACKNOWLEDGE 5
+SLAVE_DEVICE_BUSY 6
+MEMORY_PARITY_ERROR 8
+GATEWAY_PATH_UNAVAILABLE 10
+GATEWAY_TARGET_NO_RESPONSE 11
+TIMEOUT 12
+]
+"35
+[e E16964 _state `uc
+TASK_FUNC_READ_COILS 1
+TASK_FUNC_READ_DISCRETE_INPUT 2
+TASK_FUNC_READ_HOLDING_REGISTERS 3
+TASK_FUNC_READ_INPUT_REGISTERS 4
+TASK_FUNC_WRITE_SINGLE_COIL 5
+TASK_FUNC_WRITE_SINGLE_REGISTER 6
+TASK_FUNC_READ_EXCEPTION_STATUS 7
+TASK_FUNC_DIAGNOSTICS 8
+TASK_FUNC_GET_COMM_EVENT_COUNTER 11
+TASK_FUNC_GET_COMM_EVENT_LOG 12
+TASK_FUNC_WRITE_MULTIPLE_COILS 15
+TASK_FUNC_WRITE_MULTIPLE_REGISTERS 16
+TASK_FUNC_REPORT_SLAVE_ID 17
+TASK_FUNC_READ_FILE_RECORD 20
+TASK_FUNC_WRITE_FILE_RECORD 21
+TASK_FUNC_MASK_WRITE_REGISTER 22
+TASK_FUNC_READ_WRITE_MULTIPLE_REGISTERS 23
+TASK_FUNC_READ_FIFO_QUEUE 24
+TASK_FUNC_RF_READ_HOLDING_REGISTERS 32
+TASK_FUNC_RF_READ_SINGLE_REGISTER 33
+TASK_RESPONSE 34
+TASK_RESPONSE_WRITE 35
+TASK_FUNC_READ_COILS_RESPONSE 36
+TASK_FUNC_READ_DISCRETE_INPUT_RESPONSE 37
+TASK_FUNC_READ_HOLDING_REGISTERS_RESPONSE 38
+TASK_FUNC_READ_INPUT_REGISTERS_RESPONSE 39
+TASK_FUNC_WRITE_SINGLE_COIL_RESPONSE 40
+TASK_FUNC_WRITE_SINGLE_REGISTER_RESPONSE 41
+TASK_FUNC_READ_EXCEPTION_STATUS_RESPONSE 42
+TASK_FUNC_DIAGNOSTICS_RESPONSE 43
+TASK_FUNC_GET_COMM_EVENT_COUNTER_RESPONSE 44
+TASK_FUNC_GET_COMM_EVENT_LOG_RESPONSE 45
+TASK_FUNC_WRITE_MULTIPLE_COILS_RESPONSE 46
+TASK_FUNC_WRITE_MULTIPLE_REGISTERS_RESPONSE 47
+TASK_FUNC_WRITE_FILE_RECORD_RESPONSE 48
+TASK_FUNC_MASK_WRITE_REGISTER_RESPONSE 49
+TASK_FUNC_READ_WRITE_MULTIPLE_REGISTERS_RESPONSE 50
+TASK_FUNC_READ_FIFO_QUEUE_RESPONSE 51
+TASK_FUNC_REPORT_SLAVE_ID_RESPONSE 52
+TASK_FUNC_READ_FILE_RECORD_RESPONSE 53
+TASK_FUNC_RF_READ_HOLDING_REGISTERS_RESPONSE 54
+TASK_FUNC_RF_READ_SINGLE_REGISTER_RESPONSE 55
+TASK_FUNC_RF_WRITE_MULTI_REGISTER_RESPONSE 56
+TASK_FUNC_RF_WRITE_SINGLE_REGISTER_RESPONSE 57
+modbus_ready 58
+]
+"48
+[e E16047 _BOOL `uc
+FALSE 0
+TRUE 1
+]
+"77
+[e E17189 _readDataSensor `uc
+BEGIN_MODBUS_SENSOR 0
+SEND_REQUEST_MODBUS_SENSOR 1
+END_REQUEST_MODBUS_SENSOR 2
+STOP_MODBUS_SENSOR 3
+]
+"84
+[e E17195 . `uc
+MODBUS_GETADDY 0
+MODBUS_GETFUNC 1
+MODBUS_GETDATA 2
+]
+"35 C:\Users\thien\Desktop\Slave_K42_21/modbus/am2315.h
+[e E17335 readData `uc
+START_WAKE_UP 0
+STOP_WAKE_UP 1
+SEND_COMMAND 2
+READ_RSP 3
+CMD_RH 4
+READ_RH 5
+END_READ 6
+]
+"74 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\main.c
+[e E17476 _typeSensor `uc
+AM2315_SENSOR 0
+ILLUMINANCE_SENSOR 1
+SOILMOISTURE_SENSOR 2
+RELAY_NODE 3
+]
+"83
+[e E17482 _RHSensor `uc
+AM2315 0
+SHT20 1
+]
+"109
+[e E17486 . `uc
+START_RF_SETTING 0
+INSTALL_RF_SETTING 1
+CHECK_RF_SETTING 2
+WAIT_STATUS 3
+END_RF_SETTING 4
+RF_CONFIG_ERROR 5
+]
+"116
+[e E17494 _readDataSensor `uc
+BEGIN_MODBUS_SENSOR 0
+SEND_REQUEST_MODBUS_SENSOR 1
+END_REQUEST_MODBUS_SENSOR 2
+STOP_MODBUS_SENSOR 3
+]
+"128
+[e E16481 _BOOL `uc
+FALSE 0
+TRUE 1
+]
+"265
+[e E17093 _function `uc
+FUNC_READ_COILS 1
+FUNC_READ_DISCRETE_INPUT 2
+FUNC_READ_HOLDING_REGISTERS 3
+FUNC_READ_INPUT_REGISTERS 4
+FUNC_WRITE_SINGLE_COIL 5
+FUNC_WRITE_SINGLE_REGISTER 6
+FUNC_READ_EXCEPTION_STATUS 7
+FUNC_DIAGNOSTICS 8
+FUNC_GET_COMM_EVENT_COUNTER 11
+FUNC_GET_COMM_EVENT_LOG 12
+FUNC_WRITE_MULTIPLE_COILS 15
+FUNC_WRITE_MULTIPLE_REGISTERS 16
+FUNC_REPORT_SLAVE_ID 17
+FUNC_READ_FILE_RECORD 20
+FUNC_WRITE_FILE_RECORD 21
+FUNC_MASK_WRITE_REGISTER 22
+FUNC_READ_WRITE_MULTIPLE_REGISTERS 23
+FUNC_READ_FIFO_QUEUE 24
+]
+[e E17081 _exception `uc
+ILLEGAL_FUNCTION 1
+ILLEGAL_DATA_ADDRESS 2
+ILLEGAL_DATA_VALUE 3
+SLAVE_DEVICE_FAILURE 4
+ACKNOWLEDGE 5
+SLAVE_DEVICE_BUSY 6
+MEMORY_PARITY_ERROR 8
+GATEWAY_PATH_UNAVAILABLE 10
+GATEWAY_TARGET_NO_RESPONSE 11
+TIMEOUT 12
+]
+"162 C:\Users\thien\Desktop\Slave_K42_21/modbus/i2c2_master.c
+[e E16535 . `uc
+I2C2_IDLE 0
+I2C2_SEND_ADR_READ 1
+I2C2_SEND_ADR_WRITE 2
+I2C2_TX 3
+I2C2_RX 4
+I2C2_TX_EMPTY 5
+I2C2_RX_EMPTY 6
+I2C2_SEND_RESTART_READ 7
+I2C2_SEND_RESTART_WRITE 8
+I2C2_SEND_RESTART 9
+I2C2_SEND_STOP 10
+I2C2_RX_ACK 11
+I2C2_TX_ACK 12
+I2C2_RX_NACK_STOP 13
+I2C2_RX_NACK_RESTART 14
+I2C2_RESET 15
+I2C2_ADDRESS_NACK 16
+I2C2_BUS_COLLISION 17
+I2C2_BUS_ERROR 18
+]
+"184
+[e E360 . `uc
+I2C2_STOP 1
+I2C2_RESTART_READ 2
+I2C2_RESTART_WRITE 3
+I2C2_CONTINUE 4
+I2C2_RESET_LINK 5
+]
+[e E355 . `uc
+I2C2_NOERR 0
+I2C2_BUSY 1
+I2C2_FAIL 2
+]
+"219
+[e E16556 . `uc
+I2C2_DATA_COMPLETE 0
+I2C2_WRITE_COLLISION 1
+I2C2_ADDR_NACK 2
+I2C2_DATA_NACK 3
+I2C2_TIMEOUT 4
+I2C2_NULL 5
+]
+"75 C:\Users\thien\Desktop\Slave_K42_21/modbus/am2315.c
+[v _I2C_Master_Wait I2C_Master_Wait `(i  1 e 2 0 ]
+"186 C:\Users\thien\Desktop\Slave_K42_21/modbus/i2c2_master.c
+[v _I2C2_Initialize I2C2_Initialize `(v  1 e 1 0 ]
+"252
+[v _I2C2_MasterOperation I2C2_MasterOperation `(E355  1 e 1 0 ]
+"312
+[v _I2C2_SetInterruptHandler I2C2_SetInterruptHandler `(v  1 e 1 0 ]
+"316
+[v _I2C2_SetCallback I2C2_SetCallback `(v  1 s 1 I2C2_SetCallback ]
+"326
+[v _I2C2_MasterIsr I2C2_MasterIsr `(v  1 s 1 I2C2_MasterIsr ]
+[v i2_I2C2_MasterIsr I2C2_MasterIsr `(v  1 s 1 i2_I2C2_MasterIsr ]
+"330
+[v _I2C2_MasterFsm I2C2_MasterFsm `T(v  1 s 1 I2C2_MasterFsm ]
+[v i2_I2C2_MasterFsm I2C2_MasterFsm `T(v  1 s 1 i2_I2C2_MasterFsm ]
+"339
+[v _I2C2_ClearInterruptFlags I2C2_ClearInterruptFlags `T(v  1 s 1 I2C2_ClearInterruptFlags ]
+[v i2_I2C2_ClearInterruptFlags I2C2_ClearInterruptFlags `T(v  1 s 1 i2_I2C2_ClearInterruptFlags ]
+"349
+[v _I2C2_DO_IDLE I2C2_DO_IDLE `(E16535  1 s 1 I2C2_DO_IDLE ]
+[v i2_I2C2_DO_IDLE I2C2_DO_IDLE `(E16535  1 s 1 i2_I2C2_DO_IDLE ]
+"355
+[v _I2C2_DO_SEND_ADR_READ I2C2_DO_SEND_ADR_READ `(E16535  1 s 1 I2C2_DO_SEND_ADR_READ ]
+[v i2_I2C2_DO_SEND_ADR_READ I2C2_DO_SEND_ADR_READ `(E16535  1 s 1 i2_I2C2_DO_SEND_ADR_READ ]
+"364
+[v _I2C2_DO_SEND_ADR_WRITE I2C2_DO_SEND_ADR_WRITE `(E16535  1 s 1 I2C2_DO_SEND_ADR_WRITE ]
+[v i2_I2C2_DO_SEND_ADR_WRITE I2C2_DO_SEND_ADR_WRITE `(E16535  1 s 1 i2_I2C2_DO_SEND_ADR_WRITE ]
+"370
+[v _I2C2_DO_TX I2C2_DO_TX `(E16535  1 s 1 I2C2_DO_TX ]
+[v i2_I2C2_DO_TX I2C2_DO_TX `(E16535  1 s 1 i2_I2C2_DO_TX ]
+"395
+[v _I2C2_DO_RX I2C2_DO_RX `(E16535  1 s 1 I2C2_DO_RX ]
+[v i2_I2C2_DO_RX I2C2_DO_RX `(E16535  1 s 1 i2_I2C2_DO_RX ]
+"413
+[v _I2C2_DO_TX_EMPTY I2C2_DO_TX_EMPTY `(E16535  1 s 1 I2C2_DO_TX_EMPTY ]
+[v i2_I2C2_DO_TX_EMPTY I2C2_DO_TX_EMPTY `(E16535  1 s 1 i2_I2C2_DO_TX_EMPTY ]
+"430
+[v _I2C2_DO_RX_EMPTY I2C2_DO_RX_EMPTY `(E16535  1 s 1 I2C2_DO_RX_EMPTY ]
+[v i2_I2C2_DO_RX_EMPTY I2C2_DO_RX_EMPTY `(E16535  1 s 1 i2_I2C2_DO_RX_EMPTY ]
+"452
+[v _I2C2_DO_SEND_RESTART_READ I2C2_DO_SEND_RESTART_READ `(E16535  1 s 1 I2C2_DO_SEND_RESTART_READ ]
+[v i2_I2C2_DO_SEND_RESTART_READ I2C2_DO_SEND_RESTART_READ `(E16535  1 s 1 i2_I2C2_DO_SEND_RESTART_READ ]
+"457
+[v _I2C2_DO_SEND_RESTART_WRITE I2C2_DO_SEND_RESTART_WRITE `(E16535  1 s 1 I2C2_DO_SEND_RESTART_WRITE ]
+[v i2_I2C2_DO_SEND_RESTART_WRITE I2C2_DO_SEND_RESTART_WRITE `(E16535  1 s 1 i2_I2C2_DO_SEND_RESTART_WRITE ]
+"461
+[v _I2C2_DO_SEND_RESTART I2C2_DO_SEND_RESTART `(E16535  1 s 1 I2C2_DO_SEND_RESTART ]
+[v i2_I2C2_DO_SEND_RESTART I2C2_DO_SEND_RESTART `(E16535  1 s 1 i2_I2C2_DO_SEND_RESTART ]
+"465
+[v _I2C2_DO_SEND_STOP I2C2_DO_SEND_STOP `(E16535  1 s 1 I2C2_DO_SEND_STOP ]
+[v i2_I2C2_DO_SEND_STOP I2C2_DO_SEND_STOP `(E16535  1 s 1 i2_I2C2_DO_SEND_STOP ]
+"474
+[v _I2C2_DO_RX_ACK I2C2_DO_RX_ACK `(E16535  1 s 1 I2C2_DO_RX_ACK ]
+[v i2_I2C2_DO_RX_ACK I2C2_DO_RX_ACK `(E16535  1 s 1 i2_I2C2_DO_RX_ACK ]
+"479
+[v _I2C2_DO_TX_ACK I2C2_DO_TX_ACK `(E16535  1 s 1 I2C2_DO_TX_ACK ]
+[v i2_I2C2_DO_TX_ACK I2C2_DO_TX_ACK `(E16535  1 s 1 i2_I2C2_DO_TX_ACK ]
+"484
+[v _I2C2_DO_RX_NACK_STOP I2C2_DO_RX_NACK_STOP `(E16535  1 s 1 I2C2_DO_RX_NACK_STOP ]
+[v i2_I2C2_DO_RX_NACK_STOP I2C2_DO_RX_NACK_STOP `(E16535  1 s 1 i2_I2C2_DO_RX_NACK_STOP ]
+"490
+[v _I2C2_DO_RX_NACK_RESTART I2C2_DO_RX_NACK_RESTART `(E16535  1 s 1 I2C2_DO_RX_NACK_RESTART ]
+[v i2_I2C2_DO_RX_NACK_RESTART I2C2_DO_RX_NACK_RESTART `(E16535  1 s 1 i2_I2C2_DO_RX_NACK_RESTART ]
+"495
+[v _I2C2_DO_RESET I2C2_DO_RESET `(E16535  1 s 1 I2C2_DO_RESET ]
+[v i2_I2C2_DO_RESET I2C2_DO_RESET `(E16535  1 s 1 i2_I2C2_DO_RESET ]
+"502
+[v _I2C2_DO_ADDRESS_NACK I2C2_DO_ADDRESS_NACK `(E16535  1 s 1 I2C2_DO_ADDRESS_NACK ]
+[v i2_I2C2_DO_ADDRESS_NACK I2C2_DO_ADDRESS_NACK `(E16535  1 s 1 i2_I2C2_DO_ADDRESS_NACK ]
+"515
+[v _I2C2_DO_BUS_COLLISION I2C2_DO_BUS_COLLISION `(E16535  1 s 1 I2C2_DO_BUS_COLLISION ]
+[v i2_I2C2_DO_BUS_COLLISION I2C2_DO_BUS_COLLISION `(E16535  1 s 1 i2_I2C2_DO_BUS_COLLISION ]
+"530
+[v _I2C2_DO_BUS_ERROR I2C2_DO_BUS_ERROR `(E16535  1 s 1 I2C2_DO_BUS_ERROR ]
+[v i2_I2C2_DO_BUS_ERROR I2C2_DO_BUS_ERROR `(E16535  1 s 1 i2_I2C2_DO_BUS_ERROR ]
+"542
+[v _I2C2_CallbackReturnStop I2C2_CallbackReturnStop `(E360  1 e 1 0 ]
+[v i2_I2C2_CallbackReturnStop I2C2_CallbackReturnStop `(E360  1 e 1 0 ]
+"546
+[v _I2C2_CallbackReturnReset I2C2_CallbackReturnReset `(E360  1 e 1 0 ]
+[v i2_I2C2_CallbackReturnReset I2C2_CallbackReturnReset `(E360  1 e 1 0 ]
+"559
+[v _I2C2_MasterOpen I2C2_MasterOpen `T(a  1 s 1 I2C2_MasterOpen ]
+"580
+[v _I2C2_MasterClose I2C2_MasterClose `T(v  1 s 1 I2C2_MasterClose ]
+"590
+[v _I2C2_MasterGetRxData@i2c2_master$F3111 I2C2_MasterGetRxData `T(uc  1 s 1 I2C2_MasterGetRxData ]
+[v i2_I2C2_MasterGetRxData@i2c2_master$F3111 I2C2_MasterGetRxData `T(uc  1 s 1 i2_I2C2_MasterGetRxData@i2c2_master$F3111 ]
+"594
+[v _I2C2_MasterSendTxData@i2c2_master$F3095 I2C2_MasterSendTxData `T(v  1 s 1 I2C2_MasterSendTxData ]
+[v i2_I2C2_MasterSendTxData@i2c2_master$F3095 I2C2_MasterSendTxData `T(v  1 s 1 i2_I2C2_MasterSendTxData@i2c2_master$F3095 ]
+"598
+[v _I2C2_MasterGetCounter I2C2_MasterGetCounter `T(uc  1 s 1 I2C2_MasterGetCounter ]
+[v i2_I2C2_MasterGetCounter I2C2_MasterGetCounter `T(uc  1 s 1 i2_I2C2_MasterGetCounter ]
+"602
+[v _I2C2_MasterSetCounter I2C2_MasterSetCounter `T(v  1 s 1 I2C2_MasterSetCounter ]
+[v i2_I2C2_MasterSetCounter I2C2_MasterSetCounter `T(v  1 s 1 i2_I2C2_MasterSetCounter ]
+"606
+[v _I2C2_MasterResetBus I2C2_MasterResetBus `T(v  1 s 1 I2C2_MasterResetBus ]
+[v i2_I2C2_MasterResetBus I2C2_MasterResetBus `T(v  1 s 1 i2_I2C2_MasterResetBus ]
+"615
+[v _I2C2_MasterEnableRestart@i2c2_master$F3116 I2C2_MasterEnableRestart `T(v  1 s 1 I2C2_MasterEnableRestart ]
+[v i2_I2C2_MasterEnableRestart@i2c2_master$F3116 I2C2_MasterEnableRestart `T(v  1 s 1 i2_I2C2_MasterEnableRestart@i2c2_master$F3116 ]
+"620
+[v _I2C2_MasterDisableRestart I2C2_MasterDisableRestart `T(v  1 s 1 I2C2_MasterDisableRestart ]
+[v i2_I2C2_MasterDisableRestart I2C2_MasterDisableRestart `T(v  1 s 1 i2_I2C2_MasterDisableRestart ]
+"625
+[v _I2C2_MasterStop@i2c2_master$F3126 I2C2_MasterStop `T(v  1 s 1 I2C2_MasterStop ]
+[v i2_I2C2_MasterStop@i2c2_master$F3126 I2C2_MasterStop `T(v  1 s 1 i2_I2C2_MasterStop@i2c2_master$F3126 ]
+"630
+[v _I2C2_MasterIsNack I2C2_MasterIsNack `T(a  1 s 1 I2C2_MasterIsNack ]
+[v i2_I2C2_MasterIsNack I2C2_MasterIsNack `T(a  1 s 1 i2_I2C2_MasterIsNack ]
+"634
+[v _I2C2_MasterSendAck@i2c2_master$F3136 I2C2_MasterSendAck `T(v  1 s 1 I2C2_MasterSendAck ]
+[v i2_I2C2_MasterSendAck@i2c2_master$F3136 I2C2_MasterSendAck `T(v  1 s 1 i2_I2C2_MasterSendAck@i2c2_master$F3136 ]
+"638
+[v _I2C2_MasterSendNack@i2c2_master$F3141 I2C2_MasterSendNack `T(v  1 s 1 I2C2_MasterSendNack ]
+[v i2_I2C2_MasterSendNack@i2c2_master$F3141 I2C2_MasterSendNack `T(v  1 s 1 i2_I2C2_MasterSendNack@i2c2_master$F3141 ]
+"642
+[v _I2C2_MasterClearBusCollision I2C2_MasterClearBusCollision `T(v  1 s 1 I2C2_MasterClearBusCollision ]
+"649
+[v _I2C2_MasterIsRxBufFull I2C2_MasterIsRxBufFull `T(a  1 s 1 I2C2_MasterIsRxBufFull ]
+[v i2_I2C2_MasterIsRxBufFull I2C2_MasterIsRxBufFull `T(a  1 s 1 i2_I2C2_MasterIsRxBufFull ]
+"653
+[v _I2C2_MasterIsTxBufEmpty I2C2_MasterIsTxBufEmpty `T(a  1 s 1 I2C2_MasterIsTxBufEmpty ]
+[v i2_I2C2_MasterIsTxBufEmpty I2C2_MasterIsTxBufEmpty `T(a  1 s 1 i2_I2C2_MasterIsTxBufEmpty ]
+"657
+[v _I2C2_MasterIsStopFlagSet I2C2_MasterIsStopFlagSet `T(a  1 s 1 I2C2_MasterIsStopFlagSet ]
+[v i2_I2C2_MasterIsStopFlagSet I2C2_MasterIsStopFlagSet `T(a  1 s 1 i2_I2C2_MasterIsStopFlagSet ]
+"661
+[v _I2C2_MasterIsCountFlagSet I2C2_MasterIsCountFlagSet `T(a  1 s 1 I2C2_MasterIsCountFlagSet ]
+[v i2_I2C2_MasterIsCountFlagSet I2C2_MasterIsCountFlagSet `T(a  1 s 1 i2_I2C2_MasterIsCountFlagSet ]
+"665
+[v _I2C2_MasterIsNackFlagSet I2C2_MasterIsNackFlagSet `T(a  1 s 1 I2C2_MasterIsNackFlagSet ]
+[v i2_I2C2_MasterIsNackFlagSet I2C2_MasterIsNackFlagSet `T(a  1 s 1 i2_I2C2_MasterIsNackFlagSet ]
+"669
+[v _I2C2_MasterClearStopFlag I2C2_MasterClearStopFlag `T(v  1 s 1 I2C2_MasterClearStopFlag ]
+[v i2_I2C2_MasterClearStopFlag I2C2_MasterClearStopFlag `T(v  1 s 1 i2_I2C2_MasterClearStopFlag ]
+"673
+[v _I2C2_MasterClearCountFlag I2C2_MasterClearCountFlag `T(v  1 s 1 I2C2_MasterClearCountFlag ]
+[v i2_I2C2_MasterClearCountFlag I2C2_MasterClearCountFlag `T(v  1 s 1 i2_I2C2_MasterClearCountFlag ]
+"677
+[v _I2C2_MasterClearNackFlag I2C2_MasterClearNackFlag `T(v  1 s 1 I2C2_MasterClearNackFlag ]
+[v i2_I2C2_MasterClearNackFlag I2C2_MasterClearNackFlag `T(v  1 s 1 i2_I2C2_MasterClearNackFlag ]
+"681
+[v _I2C2_MasterEnableIrq I2C2_MasterEnableIrq `T(v  1 s 1 I2C2_MasterEnableIrq ]
+"696
+[v _I2C2_MasterDisableIrq I2C2_MasterDisableIrq `T(v  1 s 1 I2C2_MasterDisableIrq ]
+"700
+[v _I2C2_MasterClearIrq I2C2_MasterClearIrq `T(v  1 s 1 I2C2_MasterClearIrq ]
+[v i2_I2C2_MasterClearIrq I2C2_MasterClearIrq `T(v  1 s 1 i2_I2C2_MasterClearIrq ]
+"64 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_app_layer_slave.c
+[v _modbus_init modbus_init `(v  1 e 1 0 ]
+"96
+[v _modbus_kbhit modbus_kbhit `(E16047  1 e 1 0 ]
+"149
+[v _modbus_read_coils_rsp modbus_read_coils_rsp `(v  1 e 1 0 ]
+"172
+[v _modbus_read_discrete_input_rsp modbus_read_discrete_input_rsp `(v  1 e 1 0 ]
+"197
+[v _modbus_read_holding_registers_rsp modbus_read_holding_registers_rsp `(v  1 e 1 0 ]
+"249
+[v _modbus_write_single_coil_rsp modbus_write_single_coil_rsp `(v  1 e 1 0 ]
+"270
+[v _modbus_write_single_register_rsp modbus_write_single_register_rsp `(v  1 e 1 0 ]
+"381
+[v _modbus_write_multiple_coils_rsp modbus_write_multiple_coils_rsp `(v  1 e 1 0 ]
+"402
+[v _modbus_write_multiple_registers_rsp modbus_write_multiple_registers_rsp `(v  1 e 1 0 ]
+"607
+[v _modbus_exception_rsp modbus_exception_rsp `(v  1 e 1 0 ]
+"135 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_phy_layer_rtu_slave.c
+[v _RCV_OFF RCV_OFF `(v  1 e 1 0 ]
+"143
+[v _RCV_ON RCV_ON `(v  1 e 1 0 ]
+"152
+[v _modbus_enable_timeout modbus_enable_timeout `(v  1 e 1 0 ]
+[v i1_modbus_enable_timeout modbus_enable_timeout `(v  1 e 1 0 ]
+[v i2_modbus_enable_timeout modbus_enable_timeout `(v  1 e 1 0 ]
+"158
+[v _modbus_timeout_now modbus_timeout_now `(v  1 e 1 0 ]
+"175
+[v _modbus_check_timeout modbus_check_timeout `(v  1 e 1 0 ]
+"188
+[v _modbus_calc_crc modbus_calc_crc `(v  1 e 1 0 ]
+[v i1_modbus_calc_crc modbus_calc_crc `(v  1 e 1 0 ]
+[v i2_modbus_calc_crc modbus_calc_crc `(v  1 e 1 0 ]
+"198
+[v _modbus_serial_putc modbus_serial_putc `(v  1 e 1 0 ]
+"208
+[v _modbus_serial_send_start modbus_serial_send_start `(v  1 e 1 0 ]
+"220
+[v _modbus_serial_send_stop modbus_serial_send_stop `(v  1 e 1 0 ]
+"247
+[v _modbusReceivedDataRS485 modbusReceivedDataRS485 `(v  1 e 1 0 ]
+"281
+[v _modbusReceivedDataLoRa modbusReceivedDataLoRa `(v  1 e 1 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"181 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"395
+[v _configlora configlora `(v  1 e 1 0 ]
+"457
+[v _saveToEEPROM saveToEEPROM `(v  1 e 1 0 ]
+"479
+[v _make16 make16 `(us  1 e 2 0 ]
+"53 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"81
+[v _INTERRUPT_InterruptManagerHigh INTERRUPT_InterruptManagerHigh `IIH(v  1 e 1 0 ]
+"96
+[v _INTERRUPT_InterruptManagerLow INTERRUPT_InterruptManagerLow `IIL(v  1 e 1 0 ]
+"50 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"62
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"76
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"51 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"71 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"139
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"154
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 1 0 ]
+"167
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"171
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"84 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+"162
+[v _UART1_is_tx_done UART1_is_tx_done `(a  1 e 1 0 ]
+"195
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+"234
+[v _UART1_Receive_ISR UART1_Receive_ISR `(v  1 e 1 0 ]
+"260
+[v _UART1_RxDataHandler UART1_RxDataHandler `(v  1 e 1 0 ]
+"277
+[v _UART1_DefaultFramingErrorHandler UART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"279
+[v _UART1_DefaultOverrunErrorHandler UART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"281
+[v _UART1_DefaultErrorHandler UART1_DefaultErrorHandler `(v  1 e 1 0 ]
+"285
+[v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+"289
+[v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"293
+[v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
+"299
+[v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
+"84 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart2.c
+[v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
+"186
+[v _UART2_Write UART2_Write `(v  1 e 1 0 ]
+"202
+[v _UART2_Receive_ISR UART2_Receive_ISR `(v  1 e 1 0 ]
+"231
+[v _UART2_RxDataHandler UART2_RxDataHandler `(v  1 e 1 0 ]
+"252
+[v _UART2_Write_Char UART2_Write_Char `(v  1 e 1 0 ]
+"263
+[v _UART2_Write_String UART2_Write_String `(v  1 e 1 0 ]
+"271
+[v _UART2_DefaultFramingErrorHandler UART2_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"273
+[v _UART2_DefaultOverrunErrorHandler UART2_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"275
+[v _UART2_DefaultErrorHandler UART2_DefaultErrorHandler `(v  1 e 1 0 ]
+"279
+[v _UART2_SetFramingErrorHandler UART2_SetFramingErrorHandler `(v  1 e 1 0 ]
+"283
+[v _UART2_SetOverrunErrorHandler UART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"287
+[v _UART2_SetErrorHandler UART2_SetErrorHandler `(v  1 e 1 0 ]
+"293
+[v _UART2_SetRxInterruptHandler UART2_SetRxInterruptHandler `(v  1 e 1 0 ]
+"498 C:\Users\thien\Desktop\Slave_K42_21/Salve_Node_K42.X/mcc_generated_files/uart1.h
+[v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
+"498 C:\Users\thien\Desktop\Slave_K42_21/Salve_Node_K42.X/mcc_generated_files/uart2.h
+[v _UART2_RxInterruptHandler UART2_RxInterruptHandler `*.37(v  1 e 2 0 ]
+"162 C:\Users\thien\Desktop\Slave_K42_21/modbus/i2c2_master.c
+[v _i2c2_fsmStateTable i2c2_fsmStateTable `C[19]*.37(E16535  1 e 38 0 ]
+[s S2938 . 36 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.2v 1 callbackPayload 12 12 `us 1 time_out 2 24 `us 1 time_out_value 2 26 `uc 1 address 1 28 `*.2uc 1 data_ptr 2 29 `ui 1 data_length 2 31 `E16535 1 state 1 33 `E355 1 error 1 34 `uc 1 addressNackCheck 1 35 :2:0 
+`uc 1 busy 1 35 :1:2 
+`uc 1 inUse 1 35 :1:3 
+`uc 1 bufferFree 1 35 :1:4 
+]
+"184
+[v _I2C2_Status I2C2_Status `S2938  1 e 36 0 ]
+"213 C:\Users\thien\Desktop\Slave_K42_21/modbus/i2c2_master.h
+[v _I2C2_InterruptHandler I2C2_InterruptHandler `*.37(v  1 e 2 0 ]
+"40 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_app_layer_slave.c
+[v _finish finish `E16047  1 e 1 0 ]
+"51
+[v _coils coils `uc  1 e 1 0 ]
+"55
+[v _hold_regs hold_regs `[50]us  1 e 100 0 ]
+"32 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_phy_layer_rtu_slave.c
+[v _modbus_timeout_enabled modbus_timeout_enabled `a  1 e 1 0 ]
+[s S1823 . 259 `uc 1 address 1 0 `uc 1 len 1 1 `E16944 1 func 1 2 `E2 1 error 1 3 `[255]uc 1 data 255 4 ]
+"33
+[v _modbus_rx modbus_rx `S1823  1 e 259 0 ]
+"37
+[v _flagReceiveRS485LoRa flagReceiveRS485LoRa `uc  1 e 1 0 ]
+"38
+[v _index_putc index_putc `uc  1 e 1 0 ]
+"39
+[v _lengh_data lengh_data `uc  1 e 1 0 ]
+"40
+[v _lengh_data_cache lengh_data_cache `uc  1 e 1 0 ]
+"41
+[v _flag_decode flag_decode `uc  1 e 1 0 ]
+"42
+[v _next_flag next_flag `uc  1 e 1 0 ]
+"43
+[v _data_decode data_decode `[128]uc  1 e 128 0 ]
+"44
+[v _flag_id_mb flag_id_mb `uc  1 e 1 0 ]
+"48
+[v _modbus_serial_new modbus_serial_new `E16047  1 e 1 0 ]
+"51
+[v _count count `uc  1 e 1 0 ]
+"63
+[v _dem dem `uc  1 e 1 0 ]
+"64
+[v _number number `uc  1 e 1 0 ]
+"66
+[v _flag_has_data flag_has_data `E16047  1 e 1 0 ]
+"84
+[v _modbus_serial_state modbus_serial_state `E17288  1 e 1 0 ]
+[u S1716 . 2 `[2]uc 1 b 2 0 `us 1 d 2 0 ]
+"87
+[v _modbus_serial_crc modbus_serial_crc `S1716  1 e 2 0 ]
+"90
+[v _modbus_auchCRCHi modbus_auchCRCHi `C[256]uc  1 e 256 0 ]
+"112
+[v _modbus_auchCRCLo modbus_auchCRCLo `C[256]uc  1 e 256 0 ]
+[s S750 . 1 `uc 1 DMA1SCNTIP 1 0 :1:0 
+`uc 1 DMA1DCNTIP 1 0 :1:1 
+`uc 1 DMA1ORIP 1 0 :1:2 
+`uc 1 DMA1AIP 1 0 :1:3 
+`uc 1 SPI1RXIP 1 0 :1:4 
+`uc 1 SPI1TXIP 1 0 :1:5 
+`uc 1 SPI1IP 1 0 :1:6 
+`uc 1 I2C1RXIP 1 0 :1:7 
+]
+"2932 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f45k42.h
+[s S759 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIP 1 0 :1:6 
+]
+[u S762 . 1 `S750 1 . 1 0 `S759 1 . 1 0 ]
+[v _IPR2bits IPR2bits `VES762  1 e 1 @14722 ]
+[s S697 . 1 `uc 1 I2C1TXIP 1 0 :1:0 
+`uc 1 I2C1IP 1 0 :1:1 
+`uc 1 I2C1EIP 1 0 :1:2 
+`uc 1 U1RXIP 1 0 :1:3 
+`uc 1 U1TXIP 1 0 :1:4 
+`uc 1 U1EIP 1 0 :1:5 
+`uc 1 U1IP 1 0 :1:6 
+`uc 1 TMR0IP 1 0 :1:7 
+]
+"3005
+[s S706 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIP 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIP 1 0 :1:4 
+]
+[u S711 . 1 `S697 1 . 1 0 `S706 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES711  1 e 1 @14723 ]
+[s S729 . 1 `uc 1 I2C2IP 1 0 :1:0 
+`uc 1 I2C2EIP 1 0 :1:1 
+`uc 1 U2RXIP 1 0 :1:2 
+`uc 1 U2TXIP 1 0 :1:3 
+`uc 1 U2EIP 1 0 :1:4 
+`uc 1 U2IP 1 0 :1:5 
+`uc 1 TMR3IP 1 0 :1:6 
+`uc 1 TMR3GIP 1 0 :1:7 
+]
+"3231
+[u S738 . 1 `S729 1 . 1 0 ]
+[v _IPR6bits IPR6bits `VES738  1 e 1 @14726 ]
+[s S478 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+`uc 1 I2C1IE 1 0 :1:1 
+`uc 1 I2C1EIE 1 0 :1:2 
+`uc 1 U1RXIE 1 0 :1:3 
+`uc 1 U1TXIE 1 0 :1:4 
+`uc 1 U1EIE 1 0 :1:5 
+`uc 1 U1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"3668
+[s S487 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S493 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S498 . 1 `S478 1 . 1 0 `S487 1 . 1 0 `S493 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES498  1 e 1 @14739 ]
+[s S821 . 1 `uc 1 INT1IE 1 0 :1:0 
+`uc 1 C2IE 1 0 :1:1 
+`uc 1 DMA2SCNTIE 1 0 :1:2 
+`uc 1 DMA2DCNTIE 1 0 :1:3 
+`uc 1 DMA2ORIE 1 0 :1:4 
+`uc 1 DMA2AIE 1 0 :1:5 
+`uc 1 I2C2RXIE 1 0 :1:6 
+`uc 1 I2C2TXIE 1 0 :1:7 
+]
+"3822
+[u S830 . 1 `S821 1 . 1 0 ]
+[v _PIE5bits PIE5bits `VES830  1 e 1 @14741 ]
+[s S863 . 1 `uc 1 I2C2IE 1 0 :1:0 
+`uc 1 I2C2EIE 1 0 :1:1 
+`uc 1 U2RXIE 1 0 :1:2 
+`uc 1 U2TXIE 1 0 :1:3 
+`uc 1 U2EIE 1 0 :1:4 
+`uc 1 U2IE 1 0 :1:5 
+`uc 1 TMR3IE 1 0 :1:6 
+`uc 1 TMR3GIE 1 0 :1:7 
+]
+"3884
+[u S872 . 1 `S863 1 . 1 0 ]
+[v _PIE6bits PIE6bits `VES872  1 e 1 @14742 ]
+[s S446 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+`uc 1 I2C1IF 1 0 :1:1 
+`uc 1 I2C1EIF 1 0 :1:2 
+`uc 1 U1RXIF 1 0 :1:3 
+`uc 1 U1TXIF 1 0 :1:4 
+`uc 1 U1EIF 1 0 :1:5 
+`uc 1 U1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"4314
+[s S455 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S460 . 1 `S446 1 . 1 0 `S455 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES460  1 e 1 @14755 ]
+[s S842 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 C2IF 1 0 :1:1 
+`uc 1 DMA2SCNTIF 1 0 :1:2 
+`uc 1 DMA2DCNTIF 1 0 :1:3 
+`uc 1 DMA2ORIF 1 0 :1:4 
+`uc 1 DMA2AIF 1 0 :1:5 
+`uc 1 I2C2RXIF 1 0 :1:6 
+`uc 1 I2C2TXIF 1 0 :1:7 
+]
+"4443
+[u S851 . 1 `S842 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES851  1 e 1 @14757 ]
+[s S884 . 1 `uc 1 I2C2IF 1 0 :1:0 
+`uc 1 I2C2EIF 1 0 :1:1 
+`uc 1 U2RXIF 1 0 :1:2 
+`uc 1 U2TXIF 1 0 :1:3 
+`uc 1 U2EIF 1 0 :1:4 
+`uc 1 U2IF 1 0 :1:5 
+`uc 1 TMR3IF 1 0 :1:6 
+`uc 1 TMR3GIF 1 0 :1:7 
+]
+"4505
+[u S893 . 1 `S884 1 . 1 0 ]
+[v _PIR6bits PIR6bits `VES893  1 e 1 @14758 ]
+"4686
+[v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
+"4763
+[v _PMD1 PMD1 `VEuc  1 e 1 @14785 ]
+"4833
+[v _PMD2 PMD2 `VEuc  1 e 1 @14786 ]
+"4878
+[v _PMD3 PMD3 `VEuc  1 e 1 @14787 ]
+"4940
+[v _PMD4 PMD4 `VEuc  1 e 1 @14788 ]
+"4973
+[v _PMD5 PMD5 `VEuc  1 e 1 @14789 ]
+"5018
+[v _PMD6 PMD6 `VEuc  1 e 1 @14790 ]
+"5068
+[v _PMD7 PMD7 `VEuc  1 e 1 @14791 ]
+"5207
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"5347
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @14811 ]
+"5499
+[v _OSCEN OSCEN `VEuc  1 e 1 @14813 ]
+"5550
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
+"5654
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"5734
+[v _NVMADRL NVMADRL `VEuc  1 e 1 @14816 ]
+"5862
+[v _NVMDAT NVMDAT `VEuc  1 e 1 @14819 ]
+"5990
+[v _NVMCON1 NVMCON1 `VEuc  1 e 1 @14821 ]
+[s S341 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 REG 1 0 :2:6 
+]
+"6020
+[s S349 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 REG0 1 0 :1:6 
+`uc 1 REG1 1 0 :1:7 
+]
+[s S353 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 NVMREG 1 0 :2:6 
+]
+[s S356 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 NVMREG0 1 0 :1:6 
+`uc 1 NVMREG1 1 0 :1:7 
+]
+[u S360 . 1 `S341 1 . 1 0 `S349 1 . 1 0 `S353 1 . 1 0 `S356 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES360  1 e 1 @14821 ]
+"6080
+[v _NVMCON2 NVMCON2 `VEuc  1 e 1 @14822 ]
+"6910
+[v _RB1PPS RB1PPS `VEuc  1 e 1 @14857 ]
+"6960
+[v _RB2PPS RB2PPS `VEuc  1 e 1 @14858 ]
+"7160
+[v _RB6PPS RB6PPS `VEuc  1 e 1 @14862 ]
+"7560
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @14870 ]
+"8210
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+[s S2358 . 1 `uc 1 ANSELA0 1 0 :1:0 
+`uc 1 ANSELA1 1 0 :1:1 
+`uc 1 ANSELA2 1 0 :1:2 
+`uc 1 ANSELA3 1 0 :1:3 
+`uc 1 ANSELA4 1 0 :1:4 
+`uc 1 ANSELA5 1 0 :1:5 
+`uc 1 ANSELA6 1 0 :1:6 
+`uc 1 ANSELA7 1 0 :1:7 
+]
+"8227
+[u S2367 . 1 `S2358 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES2367  1 e 1 @14912 ]
+"8272
+[v _WPUA WPUA `VEuc  1 e 1 @14913 ]
+"8334
+[v _ODCONA ODCONA `VEuc  1 e 1 @14914 ]
+"8396
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @14915 ]
+"8458
+[v _INLVLA INLVLA `VEuc  1 e 1 @14916 ]
+"8830
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+[s S2400 . 1 `uc 1 ANSELB0 1 0 :1:0 
+`uc 1 ANSELB1 1 0 :1:1 
+`uc 1 ANSELB2 1 0 :1:2 
+`uc 1 ANSELB3 1 0 :1:3 
+`uc 1 ANSELB4 1 0 :1:4 
+`uc 1 ANSELB5 1 0 :1:5 
+`uc 1 ANSELB6 1 0 :1:6 
+`uc 1 ANSELB7 1 0 :1:7 
+]
+"8847
+[u S2409 . 1 `S2400 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES2409  1 e 1 @14928 ]
+"8892
+[v _WPUB WPUB `VEuc  1 e 1 @14929 ]
+"8954
+[v _ODCONB ODCONB `VEuc  1 e 1 @14930 ]
+"9016
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @14931 ]
+"9078
+[v _INLVLB INLVLB `VEuc  1 e 1 @14932 ]
+"9450
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @14938 ]
+"9558
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @14939 ]
+"9666
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"9728
+[v _WPUC WPUC `VEuc  1 e 1 @14945 ]
+"9790
+[v _ODCONC ODCONC `VEuc  1 e 1 @14946 ]
+"9852
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @14947 ]
+"9914
+[v _INLVLC INLVLC `VEuc  1 e 1 @14948 ]
+"10286
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @14954 ]
+"10394
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @14955 ]
+"10502
+[v _ANSELD ANSELD `VEuc  1 e 1 @14960 ]
+"10564
+[v _WPUD WPUD `VEuc  1 e 1 @14961 ]
+"10626
+[v _ODCOND ODCOND `VEuc  1 e 1 @14962 ]
+"10688
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @14963 ]
+"10750
+[v _INLVLD INLVLD `VEuc  1 e 1 @14964 ]
+"10936
+[v _RD0I2C RD0I2C `VEuc  1 e 1 @14970 ]
+"11044
+[v _RD1I2C RD1I2C `VEuc  1 e 1 @14971 ]
+"11152
+[v _ANSELE ANSELE `VEuc  1 e 1 @14976 ]
+"11184
+[v _WPUE WPUE `VEuc  1 e 1 @14977 ]
+"11222
+[v _ODCONE ODCONE `VEuc  1 e 1 @14978 ]
+"11254
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @14979 ]
+"11286
+[v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
+"12227
+[v _I2C2SCLPPS I2C2SCLPPS `VEuc  1 e 1 @15075 ]
+"12247
+[v _I2C2SDAPPS I2C2SDAPPS `VEuc  1 e 1 @15076 ]
+"12267
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @15077 ]
+"12307
+[v _U2RXPPS U2RXPPS `VEuc  1 e 1 @15080 ]
+"23718
+[v _I2C2RXB I2C2RXB `VEuc  1 e 1 @15700 ]
+"23738
+[v _I2C2TXB I2C2TXB `VEuc  1 e 1 @15701 ]
+"23758
+[v _I2C2CNT I2C2CNT `VEuc  1 e 1 @15702 ]
+"23950
+[v _I2C2CON0 I2C2CON0 `VEuc  1 e 1 @15709 ]
+[s S75 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 MDR 1 0 :1:3 
+`uc 1 CSTR 1 0 :1:4 
+`uc 1 S 1 0 :1:5 
+`uc 1 RSEN 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"23972
+[s S82 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 I2CEN 1 0 :1:7 
+]
+[u S88 . 1 `S75 1 . 1 0 `S82 1 . 1 0 ]
+[v _I2C2CON0bits I2C2CON0bits `VES88  1 e 1 @15709 ]
+"24027
+[v _I2C2CON1 I2C2CON1 `VEuc  1 e 1 @15710 ]
+[s S206 . 1 `uc 1 CSD 1 0 :1:0 
+`uc 1 TXU 1 0 :1:1 
+`uc 1 RXO 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ACKT 1 0 :1:4 
+`uc 1 ACKSTAT 1 0 :1:5 
+`uc 1 ACKDT 1 0 :1:6 
+`uc 1 ACKCNT 1 0 :1:7 
+]
+"24044
+[u S215 . 1 `S206 1 . 1 0 ]
+[v _I2C2CON1bits I2C2CON1bits `VES215  1 e 1 @15710 ]
+"24084
+[v _I2C2CON2 I2C2CON2 `VEuc  1 e 1 @15711 ]
+"24160
+[v _I2C2ERR I2C2ERR `VEuc  1 e 1 @15712 ]
+[s S3209 . 1 `uc 1 NACKIE 1 0 :1:0 
+`uc 1 BCLIE 1 0 :1:1 
+`uc 1 BTOIE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NACKIF 1 0 :1:4 
+`uc 1 BCLIF 1 0 :1:5 
+`uc 1 BTOIF 1 0 :1:6 
+]
+"24185
+[s S3217 . 1 `uc 1 NACK2IE 1 0 :1:0 
+`uc 1 BCL2IE 1 0 :1:1 
+`uc 1 BTO2IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NACK2IF 1 0 :1:4 
+`uc 1 BCL2IF 1 0 :1:5 
+`uc 1 BTO2IF 1 0 :1:6 
+]
+[u S3225 . 1 `S3209 1 . 1 0 `S3217 1 . 1 0 ]
+[v _I2C2ERRbits I2C2ERRbits `VES3225  1 e 1 @15712 ]
+[s S105 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CLRBF 1 0 :1:2 
+`uc 1 RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 TXWE 1 0 :1:7 
+]
+"24357
+[u S114 . 1 `S105 1 . 1 0 ]
+[v _I2C2STAT1bits I2C2STAT1bits `VES114  1 e 1 @15714 ]
+"24387
+[v _I2C2PIR I2C2PIR `VEuc  1 e 1 @15715 ]
+[s S35 . 1 `uc 1 SCIF 1 0 :1:0 
+`uc 1 RSCIF 1 0 :1:1 
+`uc 1 PCIF 1 0 :1:2 
+`uc 1 ADRIF 1 0 :1:3 
+`uc 1 WRIF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKTIF 1 0 :1:6 
+`uc 1 CNTIF 1 0 :1:7 
+]
+"24414
+[s S175 . 1 `uc 1 SC2IF 1 0 :1:0 
+`uc 1 RSC2IF 1 0 :1:1 
+`uc 1 PC2IF 1 0 :1:2 
+`uc 1 ADR2IF 1 0 :1:3 
+`uc 1 WR2IF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT2IF 1 0 :1:6 
+`uc 1 CNT2IF 1 0 :1:7 
+]
+[u S184 . 1 `S35 1 . 1 0 `S175 1 . 1 0 ]
+[v _I2C2PIRbits I2C2PIRbits `VES184  1 e 1 @15715 ]
+"24489
+[v _I2C2PIE I2C2PIE `VEuc  1 e 1 @15716 ]
+[s S3291 . 1 `uc 1 SCIE 1 0 :1:0 
+`uc 1 RSCIE 1 0 :1:1 
+`uc 1 PCIE 1 0 :1:2 
+`uc 1 ADRIE 1 0 :1:3 
+`uc 1 WRIE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKTIE 1 0 :1:6 
+`uc 1 CNTIE 1 0 :1:7 
+]
+"24516
+[s S3300 . 1 `uc 1 SC2IE 1 0 :1:0 
+`uc 1 RSC2IE 1 0 :1:1 
+`uc 1 PC2IE 1 0 :1:2 
+`uc 1 ADR2IE 1 0 :1:3 
+`uc 1 WR2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT2IE 1 0 :1:6 
+`uc 1 CNT2IE 1 0 :1:7 
+]
+[u S3309 . 1 `S3291 1 . 1 0 `S3300 1 . 1 0 ]
+[v _I2C2PIEbits I2C2PIEbits `VES3309  1 e 1 @15716 ]
+"24591
+[v _I2C2CLK I2C2CLK `VEuc  1 e 1 @15717 ]
+"24993
+[v _I2C1CON0bits I2C1CON0bits `VES88  1 e 1 @15731 ]
+"25065
+[v _I2C1CON1bits I2C1CON1bits `VES215  1 e 1 @15732 ]
+"25435
+[s S44 . 1 `uc 1 SC1IF 1 0 :1:0 
+`uc 1 RSC1IF 1 0 :1:1 
+`uc 1 PC1IF 1 0 :1:2 
+`uc 1 ADR1IF 1 0 :1:3 
+`uc 1 WR1IF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT1IF 1 0 :1:6 
+`uc 1 CNT1IF 1 0 :1:7 
+]
+[u S53 . 1 `S35 1 . 1 0 `S44 1 . 1 0 ]
+[v _I2C1PIRbits I2C1PIRbits `VES53  1 e 1 @15737 ]
+"25760
+[v _U2RXB U2RXB `VEuc  1 e 1 @15824 ]
+"25798
+[v _U2TXB U2TXB `VEuc  1 e 1 @15826 ]
+"25843
+[v _U2P1L U2P1L `VEuc  1 e 1 @15828 ]
+"25870
+[v _U2P2L U2P2L `VEuc  1 e 1 @15830 ]
+"25897
+[v _U2P3L U2P3L `VEuc  1 e 1 @15832 ]
+"25917
+[v _U2CON0 U2CON0 `VEuc  1 e 1 @15834 ]
+[s S1090 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+]
+"25948
+[s S1454 . 1 `uc 1 U2MODE 1 0 :4:0 
+`uc 1 U2RXEN 1 0 :1:4 
+`uc 1 U2TXEN 1 0 :1:5 
+`uc 1 U2ABDEN 1 0 :1:6 
+`uc 1 U2BRGS 1 0 :1:7 
+]
+[s S1460 . 1 `uc 1 U2MODE0 1 0 :1:0 
+`uc 1 U2MODE1 1 0 :1:1 
+`uc 1 U2MODE2 1 0 :1:2 
+]
+[s S1104 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 RXEN 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 ABDEN 1 0 :1:6 
+`uc 1 BRGS 1 0 :1:7 
+]
+[u S1470 . 1 `S1090 1 . 1 0 `S1454 1 . 1 0 `S1460 1 . 1 0 `S1104 1 . 1 0 ]
+[v _U2CON0bits U2CON0bits `VES1470  1 e 1 @15834 ]
+"26033
+[v _U2CON1 U2CON1 `VEuc  1 e 1 @15835 ]
+"26113
+[v _U2CON2 U2CON2 `VEuc  1 e 1 @15836 ]
+"26252
+[v _U2BRGL U2BRGL `VEuc  1 e 1 @15837 ]
+"26272
+[v _U2BRGH U2BRGH `VEuc  1 e 1 @15838 ]
+"26292
+[v _U2FIFO U2FIFO `VEuc  1 e 1 @15839 ]
+"26422
+[v _U2UIR U2UIR `VEuc  1 e 1 @15840 ]
+"26478
+[v _U2ERRIR U2ERRIR `VEuc  1 e 1 @15841 ]
+[s S1136 . 1 `uc 1 TXCIF 1 0 :1:0 
+`uc 1 RXFOIF 1 0 :1:1 
+`uc 1 RXBKIF 1 0 :1:2 
+`uc 1 FERIF 1 0 :1:3 
+`uc 1 CERIF 1 0 :1:4 
+`uc 1 ABDOVF 1 0 :1:5 
+`uc 1 PERIF 1 0 :1:6 
+`uc 1 TXMTIF 1 0 :1:7 
+]
+"26505
+[s S1505 . 1 `uc 1 U2TXCIF 1 0 :1:0 
+`uc 1 U2RXFOIF 1 0 :1:1 
+`uc 1 U2RXBKIF 1 0 :1:2 
+`uc 1 U2FERIF 1 0 :1:3 
+`uc 1 U2CERIF 1 0 :1:4 
+`uc 1 U2ABDOVF 1 0 :1:5 
+`uc 1 U2PERIF 1 0 :1:6 
+`uc 1 U2TXMTIF 1 0 :1:7 
+]
+[u S1514 . 1 `S1136 1 . 1 0 `S1505 1 . 1 0 ]
+[v _U2ERRIRbits U2ERRIRbits `VES1514  1 e 1 @15841 ]
+"26590
+[v _U2ERRIE U2ERRIE `VEuc  1 e 1 @15842 ]
+"26702
+[v _U1RXB U1RXB `VEuc  1 e 1 @15848 ]
+"26760
+[v _U1TXB U1TXB `VEuc  1 e 1 @15850 ]
+"26825
+[v _U1P1L U1P1L `VEuc  1 e 1 @15852 ]
+"26845
+[v _U1P1H U1P1H `VEuc  1 e 1 @15853 ]
+"26872
+[v _U1P2L U1P2L `VEuc  1 e 1 @15854 ]
+"26892
+[v _U1P2H U1P2H `VEuc  1 e 1 @15855 ]
+"26919
+[v _U1P3L U1P3L `VEuc  1 e 1 @15856 ]
+"26939
+[v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
+"26959
+[v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
+"26990
+[s S1094 . 1 `uc 1 U1MODE 1 0 :4:0 
+`uc 1 U1RXEN 1 0 :1:4 
+`uc 1 U1TXEN 1 0 :1:5 
+`uc 1 U1ABDEN 1 0 :1:6 
+`uc 1 U1BRGS 1 0 :1:7 
+]
+[s S1100 . 1 `uc 1 U1MODE0 1 0 :1:0 
+`uc 1 U1MODE1 1 0 :1:1 
+`uc 1 U1MODE2 1 0 :1:2 
+]
+[u S1110 . 1 `S1090 1 . 1 0 `S1094 1 . 1 0 `S1100 1 . 1 0 `S1104 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES1110  1 e 1 @15858 ]
+"27075
+[v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
+"27155
+[v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
+"27304
+[v _U1BRGL U1BRGL `VEuc  1 e 1 @15861 ]
+"27324
+[v _U1BRGH U1BRGH `VEuc  1 e 1 @15862 ]
+"27344
+[v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
+"27474
+[v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
+"27530
+[v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
+"27557
+[s S1145 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+`uc 1 U1RXFOIF 1 0 :1:1 
+`uc 1 U1RXBKIF 1 0 :1:2 
+`uc 1 U1FERIF 1 0 :1:3 
+`uc 1 U1CERIF 1 0 :1:4 
+`uc 1 U1ABDOVF 1 0 :1:5 
+`uc 1 U1PERIF 1 0 :1:6 
+`uc 1 U1TXMTIF 1 0 :1:7 
+]
+[u S1154 . 1 `S1136 1 . 1 0 `S1145 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES1154  1 e 1 @15865 ]
+"27642
+[v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
+"45038
+[v _TMR0L TMR0L `VEuc  1 e 1 @16310 ]
+"45176
+[v _TMR0H TMR0H `VEuc  1 e 1 @16311 ]
+"45430
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @16312 ]
+[s S534 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"45458
+[s S540 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"45458
+[s S546 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+"45458
+[u S552 . 1 `S534 1 . 1 0 `S540 1 . 1 0 `S546 1 . 1 0 ]
+"45458
+"45458
+[v _T0CON0bits T0CON0bits `VES552  1 e 1 @16312 ]
+"45528
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
+"45670
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+[s S579 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"45697
+[s S588 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+"45697
+[u S597 . 1 `S579 1 . 1 0 `S588 1 . 1 0 ]
+"45697
+"45697
+[v _LATAbits LATAbits `VES597  1 e 1 @16314 ]
+"45782
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+[s S2592 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"45809
+[s S2601 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+"45809
+[u S2610 . 1 `S2592 1 . 1 0 `S2601 1 . 1 0 ]
+"45809
+"45809
+[v _LATBbits LATBbits `VES2610  1 e 1 @16315 ]
+"45894
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+"46006
+[v _LATD LATD `VEuc  1 e 1 @16317 ]
+[s S1176 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"46033
+[s S1185 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+"46033
+[u S1194 . 1 `S1176 1 . 1 0 `S1185 1 . 1 0 ]
+"46033
+"46033
+[v _LATDbits LATDbits `VES1194  1 e 1 @16317 ]
+"46118
+[v _LATE LATE `VEuc  1 e 1 @16318 ]
+"46170
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+[s S2337 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"46187
+[u S2346 . 1 `S2337 1 . 1 0 ]
+"46187
+"46187
+[v _TRISAbits TRISAbits `VES2346  1 e 1 @16322 ]
+"46232
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+[s S2379 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"46249
+[u S2388 . 1 `S2379 1 . 1 0 ]
+"46249
+"46249
+[v _TRISBbits TRISBbits `VES2388  1 e 1 @16323 ]
+"46294
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+[s S2294 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"46373
+[u S2303 . 1 `S2294 1 . 1 0 ]
+"46373
+"46373
+[v _TRISDbits TRISDbits `VES2303  1 e 1 @16325 ]
+"46418
+[v _TRISE TRISE `VEuc  1 e 1 @16326 ]
+[s S2554 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"46474
+[s S2563 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 LVDIN 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 RJPU 1 0 :1:7 
+]
+"46474
+[u S2569 . 1 `S2554 1 . 1 0 `S2563 1 . 1 0 ]
+"46474
+"46474
+[v _PORTAbits PORTAbits `VES2569  1 e 1 @16330 ]
+[s S387 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"46899
+[s S395 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"46899
+[u S398 . 1 `S387 1 . 1 0 `S395 1 . 1 0 ]
+"46899
+"46899
+[v _INTCON0bits INTCON0bits `VES398  1 e 1 @16338 ]
+"55656
+[v _RB3 RB3 `VEb  1 e 0 @130651 ]
+"58335
+[v _TRISD4 TRISD4 `VEb  1 e 0 @130604 ]
+"116 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\main.c
+[v _readDataSensor readDataSensor `E17189  1 e 1 0 ]
+"136
+[v _events_coils_output events_coils_output `E16481  1 e 1 0 ]
+"137
+[v _data_read_coil data_read_coil `uc  1 e 1 0 ]
+"150
+[v _tick_time1 tick_time1 `VEul  1 e 4 0 ]
+"151
+[v _sensor_timer1_ms sensor_timer1_ms `VEus  1 e 2 0 ]
+"154
+[v _read_eeprom_flag read_eeprom_flag `uc  1 e 1 0 ]
+"156
+[v _tick_reset_setting_rx_lora tick_reset_setting_rx_lora `ul  1 e 4 0 ]
+"157
+[v _sum_reset_device sum_reset_device `uc  1 e 1 0 ]
+"173
+[v _checklora checklora `E16481  1 e 1 0 ]
+"61 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/tmr0.c
+[v _timer0ReloadVal16bit timer0ReloadVal16bit `VEus  1 e 2 0 ]
+"62
+[v _timer_modbus timer_modbus `VEus  1 e 2 0 ]
+"69
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"66 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart1.c
+[v _uart1RxHead uart1RxHead `VEuc  1 s 1 uart1RxHead ]
+"67
+[v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
+"68
+[v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
+[s S981 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"69
+[u S986 . 1 `S981 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S986  1 s 8 uart1RxStatusBuffer ]
+"70
+[v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
+"71
+[v _uart1RxLastError uart1RxLastError `VES986  1 s 1 uart1RxLastError ]
+"76
+[v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"77
+[v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"78
+[v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
+"66 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart2.c
+[v _uart2RxHead uart2RxHead `VEuc  1 s 1 uart2RxHead ]
+"67
+[v _uart2RxTail uart2RxTail `VEuc  1 s 1 uart2RxTail ]
+"68
+[v _uart2RxBuffer uart2RxBuffer `VE[8]uc  1 s 8 uart2RxBuffer ]
+"69
+[v _uart2RxStatusBuffer uart2RxStatusBuffer `VE[8]S986  1 s 8 uart2RxStatusBuffer ]
+"70
+[v _uart2RxCount uart2RxCount `VEuc  1 e 1 0 ]
+"71
+[v _uart2RxLastError uart2RxLastError `VES986  1 s 1 uart2RxLastError ]
+"76
+[v _UART2_FramingErrorHandler UART2_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"77
+[v _UART2_OverrunErrorHandler UART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"78
+[v _UART2_ErrorHandler UART2_ErrorHandler `*.37(v  1 e 2 0 ]
+"181 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"385
+} 0
+"457
+[v _saveToEEPROM saveToEEPROM `(v  1 e 1 0 ]
+{
+[v saveToEEPROM@position position `uc  1 p 1 0 ]
+"459
+} 0
+"270 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_app_layer_slave.c
+[v _modbus_write_single_register_rsp modbus_write_single_register_rsp `(v  1 e 1 0 ]
+{
+[v modbus_write_single_register_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_write_single_register_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_write_single_register_rsp@reg_address reg_address `us  1 p 2 7 ]
+"271
+[v modbus_write_single_register_rsp@reg_value reg_value `us  1 p 2 9 ]
+"273
+[v modbus_write_single_register_rsp@address address `uc  1 a 1 11 ]
+"282
+} 0
+"249
+[v _modbus_write_single_coil_rsp modbus_write_single_coil_rsp `(v  1 e 1 0 ]
+{
+[v modbus_write_single_coil_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_write_single_coil_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_write_single_coil_rsp@output_address output_address `us  1 p 2 7 ]
+"250
+[v modbus_write_single_coil_rsp@output_value output_value `us  1 p 2 9 ]
+"252
+[v modbus_write_single_coil_rsp@address address `uc  1 a 1 11 ]
+"261
+} 0
+"402
+[v _modbus_write_multiple_registers_rsp modbus_write_multiple_registers_rsp `(v  1 e 1 0 ]
+{
+[v modbus_write_multiple_registers_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_write_multiple_registers_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_write_multiple_registers_rsp@start_address start_address `us  1 p 2 7 ]
+"403
+[v modbus_write_multiple_registers_rsp@quantity quantity `us  1 p 2 9 ]
+"405
+[v modbus_write_multiple_registers_rsp@address address `uc  1 a 1 11 ]
+"414
+} 0
+"381
+[v _modbus_write_multiple_coils_rsp modbus_write_multiple_coils_rsp `(v  1 e 1 0 ]
+{
+[v modbus_write_multiple_coils_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_write_multiple_coils_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_write_multiple_coils_rsp@start_address start_address `us  1 p 2 7 ]
+"382
+[v modbus_write_multiple_coils_rsp@quantity quantity `us  1 p 2 9 ]
+"384
+[v modbus_write_multiple_coils_rsp@address address `uc  1 a 1 11 ]
+"393
+} 0
+"197
+[v _modbus_read_holding_registers_rsp modbus_read_holding_registers_rsp `(v  1 e 1 0 ]
+{
+[v modbus_read_holding_registers_rsp@address address `uc  1 a 1 wreg ]
+"200
+[v modbus_read_holding_registers_rsp@i i `uc  1 a 1 12 ]
+"197
+[v modbus_read_holding_registers_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_read_holding_registers_rsp@byte_count byte_count `uc  1 p 1 6 ]
+"198
+[v modbus_read_holding_registers_rsp@reg_data reg_data `*.39us  1 p 2 7 ]
+"202
+[v modbus_read_holding_registers_rsp@address address `uc  1 a 1 11 ]
+"214
+} 0
+"172
+[v _modbus_read_discrete_input_rsp modbus_read_discrete_input_rsp `(v  1 e 1 0 ]
+{
+[v modbus_read_discrete_input_rsp@address address `uc  1 a 1 wreg ]
+"175
+[v modbus_read_discrete_input_rsp@i i `uc  1 a 1 10 ]
+"172
+[v modbus_read_discrete_input_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_read_discrete_input_rsp@byte_count byte_count `uc  1 p 1 6 ]
+"173
+[v modbus_read_discrete_input_rsp@input_data input_data `*.39uc  1 p 2 7 ]
+"177
+[v modbus_read_discrete_input_rsp@address address `uc  1 a 1 9 ]
+"188
+} 0
+"149
+[v _modbus_read_coils_rsp modbus_read_coils_rsp `(v  1 e 1 0 ]
+{
+[v modbus_read_coils_rsp@address address `uc  1 a 1 wreg ]
+"151
+[v modbus_read_coils_rsp@i i `uc  1 a 1 10 ]
+"149
+[v modbus_read_coils_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_read_coils_rsp@byte_count byte_count `uc  1 p 1 6 ]
+[v modbus_read_coils_rsp@coil_data coil_data `*.39uc  1 p 2 7 ]
+"152
+[v modbus_read_coils_rsp@address address `uc  1 a 1 9 ]
+"163
+} 0
+"96
+[v _modbus_kbhit modbus_kbhit `(E16047  1 e 1 0 ]
+{
+"114
+} 0
+"175 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_phy_layer_rtu_slave.c
+[v _modbus_check_timeout modbus_check_timeout `(v  1 e 1 0 ]
+{
+"184
+} 0
+"158
+[v _modbus_timeout_now modbus_timeout_now `(v  1 e 1 0 ]
+{
+"171
+} 0
+"152
+[v _modbus_enable_timeout modbus_enable_timeout `(v  1 e 1 0 ]
+{
+[v modbus_enable_timeout@enable enable `E16047  1 a 1 wreg ]
+[v modbus_enable_timeout@enable enable `E16047  1 a 1 wreg ]
+[v modbus_enable_timeout@enable enable `E16047  1 a 1 0 ]
+"154
+} 0
+"64 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_app_layer_slave.c
+[v _modbus_init modbus_init `(v  1 e 1 0 ]
+{
+"89
+} 0
+"607
+[v _modbus_exception_rsp modbus_exception_rsp `(v  1 e 1 0 ]
+{
+[v modbus_exception_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_exception_rsp@address address `uc  1 a 1 wreg ]
+[v modbus_exception_rsp@func func `us  1 p 2 6 ]
+[v modbus_exception_rsp@error error `E2  1 p 1 8 ]
+"609
+[v modbus_exception_rsp@address address `uc  1 a 1 9 ]
+"612
+} 0
+"220 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_phy_layer_rtu_slave.c
+[v _modbus_serial_send_stop modbus_serial_send_stop `(v  1 e 1 0 ]
+{
+"222
+[v modbus_serial_send_stop@j j `ul  1 a 4 0 ]
+"221
+[v modbus_serial_send_stop@crc_high crc_high `uc  1 a 1 5 ]
+[v modbus_serial_send_stop@crc_low crc_low `uc  1 a 1 4 ]
+"243
+} 0
+"143
+[v _RCV_ON RCV_ON `(v  1 e 1 0 ]
+{
+"148
+} 0
+"208
+[v _modbus_serial_send_start modbus_serial_send_start `(v  1 e 1 0 ]
+{
+[v modbus_serial_send_start@to to `uc  1 a 1 wreg ]
+[v modbus_serial_send_start@to to `uc  1 a 1 wreg ]
+[v modbus_serial_send_start@func func `uc  1 p 1 3 ]
+[v modbus_serial_send_start@to to `uc  1 a 1 0 ]
+"216
+} 0
+"198
+[v _modbus_serial_putc modbus_serial_putc `(v  1 e 1 0 ]
+{
+[v modbus_serial_putc@c c `uc  1 a 1 wreg ]
+[v modbus_serial_putc@c c `uc  1 a 1 wreg ]
+"200
+[v modbus_serial_putc@c c `uc  1 a 1 0 ]
+"204
+} 0
+"188
+[v _modbus_calc_crc modbus_calc_crc `(v  1 e 1 0 ]
+{
+[v modbus_calc_crc@data data `uc  1 a 1 wreg ]
+"189
+[v modbus_calc_crc@uIndex uIndex `uc  1 a 1 1 ]
+"188
+[v modbus_calc_crc@data data `uc  1 a 1 wreg ]
+"191
+[v modbus_calc_crc@data data `uc  1 a 1 0 ]
+"194
+} 0
+"195 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart1.c
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+{
+[v UART1_Write@txData txData `uc  1 a 1 wreg ]
+"198
+[v UART1_Write@t t `us  1 a 2 1 ]
+"195
+[v UART1_Write@txData txData `uc  1 a 1 wreg ]
+"197
+[v UART1_Write@txData txData `uc  1 a 1 0 ]
+"208
+} 0
+"162
+[v _UART1_is_tx_done UART1_is_tx_done `(a  1 e 1 0 ]
+{
+"165
+} 0
+"135 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_phy_layer_rtu_slave.c
+[v _RCV_OFF RCV_OFF `(v  1 e 1 0 ]
+{
+"139
+} 0
+"479 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\main.c
+[v _make16 make16 `(us  1 e 2 0 ]
+{
+[v make16@high high `uc  1 a 1 wreg ]
+"480
+[v make16@value value `us  1 a 2 5 ]
+"479
+[v make16@high high `uc  1 a 1 wreg ]
+[v make16@low low `uc  1 p 1 0 ]
+[v make16@high high `uc  1 a 1 4 ]
+"483
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"186 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart2.c
+[v _UART2_Write UART2_Write `(v  1 e 1 0 ]
+{
+[v UART2_Write@txData txData `uc  1 a 1 wreg ]
+"188
+[v UART2_Write@t t `us  1 a 2 1 ]
+"186
+[v UART2_Write@txData txData `uc  1 a 1 wreg ]
+"188
+[v UART2_Write@txData txData `uc  1 a 1 0 ]
+"196
+} 0
+"50 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"60
+} 0
+"84 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart2.c
+[v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
+{
+"141
+} 0
+"293
+[v _UART2_SetRxInterruptHandler UART2_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetRxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"295
+} 0
+"283
+[v _UART2_SetOverrunErrorHandler UART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"285
+} 0
+"279
+[v _UART2_SetFramingErrorHandler UART2_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"281
+} 0
+"287
+[v _UART2_SetErrorHandler UART2_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v UART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"289
+} 0
+"84 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+{
+"150
+} 0
+"299
+[v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetRxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"301
+} 0
+"289
+[v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"291
+} 0
+"285
+[v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"287
+} 0
+"293
+[v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"295
+} 0
+"71 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"98
+} 0
+"167
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"169
+} 0
+"76 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"51 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"134
+} 0
+"62 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
+"53 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"79
+} 0
+"186 C:\Users\thien\Desktop\Slave_K42_21/modbus/i2c2_master.c
+[v _I2C2_Initialize I2C2_Initialize `(v  1 e 1 0 ]
+{
+"204
+} 0
+"96 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManagerLow INTERRUPT_InterruptManagerLow `IIL(v  1 e 1 0 ]
+{
+"111
+} 0
+"202 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart2.c
+[v _UART2_Receive_ISR UART2_Receive_ISR `(v  1 e 1 0 ]
+{
+"226
+} 0
+"231
+[v _UART2_RxDataHandler UART2_RxDataHandler `(v  1 e 1 0 ]
+{
+"250
+} 0
+"281 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_phy_layer_rtu_slave.c
+[v _modbusReceivedDataLoRa modbusReceivedDataLoRa `(v  1 e 1 0 ]
+{
+"286
+[v modbusReceivedDataLoRa@c c `uc  1 a 1 14 ]
+"323
+} 0
+"152
+[v i1_modbus_enable_timeout modbus_enable_timeout `(v  1 e 1 0 ]
+{
+[v i1modbus_enable_timeout@enable enable `E16047  1 a 1 wreg ]
+[v i1modbus_enable_timeout@enable enable `E16047  1 a 1 wreg ]
+[v i1modbus_enable_timeout@enable enable `E16047  1 a 1 12 ]
+"154
+} 0
+"188
+[v i1_modbus_calc_crc modbus_calc_crc `(v  1 e 1 0 ]
+{
+[v i1modbus_calc_crc@data data `uc  1 a 1 wreg ]
+"189
+[v i1modbus_calc_crc@uIndex uIndex `uc  1 a 1 13 ]
+"188
+[v i1modbus_calc_crc@data data `uc  1 a 1 wreg ]
+"191
+[v i1modbus_calc_crc@data data `uc  1 a 1 12 ]
+"194
+} 0
+"139 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"152
+} 0
+"154
+[v _TMR0_CallBack TMR0_CallBack `(v  1 e 1 0 ]
+{
+"165
+} 0
+"171
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"174
+} 0
+"326 C:\Users\thien\Desktop\Slave_K42_21/modbus/i2c2_master.c
+[v _I2C2_MasterIsr I2C2_MasterIsr `(v  1 s 1 I2C2_MasterIsr ]
+{
+"328
+} 0
+"330
+[v _I2C2_MasterFsm I2C2_MasterFsm `T(v  1 s 1 I2C2_MasterFsm ]
+{
+"337
+} 0
+"530
+[v _I2C2_DO_BUS_ERROR I2C2_DO_BUS_ERROR `(E16535  1 s 1 I2C2_DO_BUS_ERROR ]
+{
+"535
+} 0
+"515
+[v _I2C2_DO_BUS_COLLISION I2C2_DO_BUS_COLLISION `(E16535  1 s 1 I2C2_DO_BUS_COLLISION ]
+{
+"528
+} 0
+"502
+[v _I2C2_DO_ADDRESS_NACK I2C2_DO_ADDRESS_NACK `(E16535  1 s 1 I2C2_DO_ADDRESS_NACK ]
+{
+"513
+} 0
+"495
+[v _I2C2_DO_RESET I2C2_DO_RESET `(E16535  1 s 1 I2C2_DO_RESET ]
+{
+"500
+} 0
+"490
+[v _I2C2_DO_RX_NACK_RESTART I2C2_DO_RX_NACK_RESTART `(E16535  1 s 1 I2C2_DO_RX_NACK_RESTART ]
+{
+"493
+} 0
+"484
+[v _I2C2_DO_RX_NACK_STOP I2C2_DO_RX_NACK_STOP `(E16535  1 s 1 I2C2_DO_RX_NACK_STOP ]
+{
+"488
+} 0
+"474
+[v _I2C2_DO_RX_ACK I2C2_DO_RX_ACK `(E16535  1 s 1 I2C2_DO_RX_ACK ]
+{
+"477
+} 0
+"465
+[v _I2C2_DO_SEND_STOP I2C2_DO_SEND_STOP `(E16535  1 s 1 I2C2_DO_SEND_STOP ]
+{
+"472
+} 0
+"461
+[v _I2C2_DO_SEND_RESTART I2C2_DO_SEND_RESTART `(E16535  1 s 1 I2C2_DO_SEND_RESTART ]
+{
+"463
+} 0
+"457
+[v _I2C2_DO_SEND_RESTART_WRITE I2C2_DO_SEND_RESTART_WRITE `(E16535  1 s 1 I2C2_DO_SEND_RESTART_WRITE ]
+{
+"459
+} 0
+"452
+[v _I2C2_DO_SEND_RESTART_READ I2C2_DO_SEND_RESTART_READ `(E16535  1 s 1 I2C2_DO_SEND_RESTART_READ ]
+{
+"455
+} 0
+"430
+[v _I2C2_DO_RX_EMPTY I2C2_DO_RX_EMPTY `(E16535  1 s 1 I2C2_DO_RX_EMPTY ]
+{
+"450
+} 0
+"413
+[v _I2C2_DO_TX_EMPTY I2C2_DO_TX_EMPTY `(E16535  1 s 1 I2C2_DO_TX_EMPTY ]
+{
+"428
+} 0
+"395
+[v _I2C2_DO_RX I2C2_DO_RX `(E16535  1 s 1 I2C2_DO_RX ]
+{
+"407
+[v I2C2_DO_RX@retFsmState retFsmState `E16535  1 a 1 18 ]
+"411
+} 0
+"370
+[v _I2C2_DO_TX I2C2_DO_TX `(E16535  1 s 1 I2C2_DO_TX ]
+{
+"387
+[v I2C2_DO_TX@retFsmState retFsmState `E16535  1 a 1 19 ]
+"386
+[v I2C2_DO_TX@dataTx dataTx `uc  1 a 1 18 ]
+"393
+} 0
+"364
+[v _I2C2_DO_SEND_ADR_WRITE I2C2_DO_SEND_ADR_WRITE `(E16535  1 s 1 I2C2_DO_SEND_ADR_WRITE ]
+{
+"368
+} 0
+"355
+[v _I2C2_DO_SEND_ADR_READ I2C2_DO_SEND_ADR_READ `(E16535  1 s 1 I2C2_DO_SEND_ADR_READ ]
+{
+"362
+} 0
+"349
+[v _I2C2_DO_IDLE I2C2_DO_IDLE `(E16535  1 s 1 I2C2_DO_IDLE ]
+{
+"353
+} 0
+"479
+[v _I2C2_DO_TX_ACK I2C2_DO_TX_ACK `(E16535  1 s 1 I2C2_DO_TX_ACK ]
+{
+"482
+} 0
+"653
+[v _I2C2_MasterIsTxBufEmpty I2C2_MasterIsTxBufEmpty `T(a  1 s 1 I2C2_MasterIsTxBufEmpty ]
+{
+"655
+} 0
+"630
+[v _I2C2_MasterIsNack I2C2_MasterIsNack `T(a  1 s 1 I2C2_MasterIsNack ]
+{
+"632
+} 0
+"598
+[v _I2C2_MasterGetCounter I2C2_MasterGetCounter `T(uc  1 s 1 I2C2_MasterGetCounter ]
+{
+"600
+} 0
+"625
+[v _I2C2_MasterStop@i2c2_master$F3126 I2C2_MasterStop `T(v  1 s 1 I2C2_MasterStop ]
+{
+"628
+} 0
+"638
+[v _I2C2_MasterSendNack@i2c2_master$F3141 I2C2_MasterSendNack `T(v  1 s 1 I2C2_MasterSendNack ]
+{
+"640
+} 0
+"634
+[v _I2C2_MasterSendAck@i2c2_master$F3136 I2C2_MasterSendAck `T(v  1 s 1 I2C2_MasterSendAck ]
+{
+"636
+} 0
+"649
+[v _I2C2_MasterIsRxBufFull I2C2_MasterIsRxBufFull `T(a  1 s 1 I2C2_MasterIsRxBufFull ]
+{
+"651
+} 0
+"590
+[v _I2C2_MasterGetRxData@i2c2_master$F3111 I2C2_MasterGetRxData `T(uc  1 s 1 I2C2_MasterGetRxData ]
+{
+"592
+} 0
+"700
+[v _I2C2_MasterClearIrq I2C2_MasterClearIrq `T(v  1 s 1 I2C2_MasterClearIrq ]
+{
+"702
+} 0
+"594
+[v _I2C2_MasterSendTxData@i2c2_master$F3095 I2C2_MasterSendTxData `T(v  1 s 1 I2C2_MasterSendTxData ]
+{
+[v I2C2_MasterSendTxData@i2c2_master$F3095@data data `uc  1 a 1 wreg ]
+[v I2C2_MasterSendTxData@i2c2_master$F3095@data data `uc  1 a 1 wreg ]
+[v I2C2_MasterSendTxData@i2c2_master$F3095@data data `uc  1 a 1 12 ]
+"596
+} 0
+"602
+[v _I2C2_MasterSetCounter I2C2_MasterSetCounter `T(v  1 s 1 I2C2_MasterSetCounter ]
+{
+[v I2C2_MasterSetCounter@counter counter `uc  1 a 1 wreg ]
+[v I2C2_MasterSetCounter@counter counter `uc  1 a 1 wreg ]
+[v I2C2_MasterSetCounter@counter counter `uc  1 a 1 12 ]
+"604
+} 0
+"615
+[v _I2C2_MasterEnableRestart@i2c2_master$F3116 I2C2_MasterEnableRestart `T(v  1 s 1 I2C2_MasterEnableRestart ]
+{
+"618
+} 0
+"620
+[v _I2C2_MasterDisableRestart I2C2_MasterDisableRestart `T(v  1 s 1 I2C2_MasterDisableRestart ]
+{
+"623
+} 0
+"606
+[v _I2C2_MasterResetBus I2C2_MasterResetBus `T(v  1 s 1 I2C2_MasterResetBus ]
+{
+"613
+} 0
+"546
+[v _I2C2_CallbackReturnReset I2C2_CallbackReturnReset `(E360  1 e 1 0 ]
+{
+[v I2C2_CallbackReturnReset@funPtr funPtr `*.2v  1 p 2 12 ]
+"548
+} 0
+"542
+[v _I2C2_CallbackReturnStop I2C2_CallbackReturnStop `(E360  1 e 1 0 ]
+{
+"544
+} 0
+"339
+[v _I2C2_ClearInterruptFlags I2C2_ClearInterruptFlags `T(v  1 s 1 I2C2_ClearInterruptFlags ]
+{
+"347
+} 0
+"657
+[v _I2C2_MasterIsStopFlagSet I2C2_MasterIsStopFlagSet `T(a  1 s 1 I2C2_MasterIsStopFlagSet ]
+{
+"659
+} 0
+"665
+[v _I2C2_MasterIsNackFlagSet I2C2_MasterIsNackFlagSet `T(a  1 s 1 I2C2_MasterIsNackFlagSet ]
+{
+"667
+} 0
+"661
+[v _I2C2_MasterIsCountFlagSet I2C2_MasterIsCountFlagSet `T(a  1 s 1 I2C2_MasterIsCountFlagSet ]
+{
+"663
+} 0
+"669
+[v _I2C2_MasterClearStopFlag I2C2_MasterClearStopFlag `T(v  1 s 1 I2C2_MasterClearStopFlag ]
+{
+"671
+} 0
+"677
+[v _I2C2_MasterClearNackFlag I2C2_MasterClearNackFlag `T(v  1 s 1 I2C2_MasterClearNackFlag ]
+{
+"679
+} 0
+"673
+[v _I2C2_MasterClearCountFlag I2C2_MasterClearCountFlag `T(v  1 s 1 I2C2_MasterClearCountFlag ]
+{
+"675
+} 0
+"81 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManagerHigh INTERRUPT_InterruptManagerHigh `IIH(v  1 e 1 0 ]
+{
+"94
+} 0
+"326 C:\Users\thien\Desktop\Slave_K42_21/modbus/i2c2_master.c
+[v i2_I2C2_MasterIsr I2C2_MasterIsr `(v  1 s 1 i2_I2C2_MasterIsr ]
+{
+"328
+} 0
+"330
+[v i2_I2C2_MasterFsm I2C2_MasterFsm `T(v  1 s 1 i2_I2C2_MasterFsm ]
+{
+"337
+} 0
+"530
+[v i2_I2C2_DO_BUS_ERROR I2C2_DO_BUS_ERROR `(E16535  1 s 1 i2_I2C2_DO_BUS_ERROR ]
+{
+"535
+} 0
+"515
+[v i2_I2C2_DO_BUS_COLLISION I2C2_DO_BUS_COLLISION `(E16535  1 s 1 i2_I2C2_DO_BUS_COLLISION ]
+{
+"528
+} 0
+"502
+[v i2_I2C2_DO_ADDRESS_NACK I2C2_DO_ADDRESS_NACK `(E16535  1 s 1 i2_I2C2_DO_ADDRESS_NACK ]
+{
+"513
+} 0
+"495
+[v i2_I2C2_DO_RESET I2C2_DO_RESET `(E16535  1 s 1 i2_I2C2_DO_RESET ]
+{
+"500
+} 0
+"490
+[v i2_I2C2_DO_RX_NACK_RESTART I2C2_DO_RX_NACK_RESTART `(E16535  1 s 1 i2_I2C2_DO_RX_NACK_RESTART ]
+{
+"493
+} 0
+"484
+[v i2_I2C2_DO_RX_NACK_STOP I2C2_DO_RX_NACK_STOP `(E16535  1 s 1 i2_I2C2_DO_RX_NACK_STOP ]
+{
+"488
+} 0
+"474
+[v i2_I2C2_DO_RX_ACK I2C2_DO_RX_ACK `(E16535  1 s 1 i2_I2C2_DO_RX_ACK ]
+{
+"477
+} 0
+"465
+[v i2_I2C2_DO_SEND_STOP I2C2_DO_SEND_STOP `(E16535  1 s 1 i2_I2C2_DO_SEND_STOP ]
+{
+"472
+} 0
+"461
+[v i2_I2C2_DO_SEND_RESTART I2C2_DO_SEND_RESTART `(E16535  1 s 1 i2_I2C2_DO_SEND_RESTART ]
+{
+"463
+} 0
+"457
+[v i2_I2C2_DO_SEND_RESTART_WRITE I2C2_DO_SEND_RESTART_WRITE `(E16535  1 s 1 i2_I2C2_DO_SEND_RESTART_WRITE ]
+{
+"459
+} 0
+"452
+[v i2_I2C2_DO_SEND_RESTART_READ I2C2_DO_SEND_RESTART_READ `(E16535  1 s 1 i2_I2C2_DO_SEND_RESTART_READ ]
+{
+"455
+} 0
+"430
+[v i2_I2C2_DO_RX_EMPTY I2C2_DO_RX_EMPTY `(E16535  1 s 1 i2_I2C2_DO_RX_EMPTY ]
+{
+"450
+} 0
+"413
+[v i2_I2C2_DO_TX_EMPTY I2C2_DO_TX_EMPTY `(E16535  1 s 1 i2_I2C2_DO_TX_EMPTY ]
+{
+"428
+} 0
+"395
+[v i2_I2C2_DO_RX I2C2_DO_RX `(E16535  1 s 1 i2_I2C2_DO_RX ]
+{
+"407
+[v i2I2C2_DO_RX@retFsmState retFsmState `E16535  1 a 1 2 ]
+"411
+} 0
+"370
+[v i2_I2C2_DO_TX I2C2_DO_TX `(E16535  1 s 1 i2_I2C2_DO_TX ]
+{
+"387
+[v i2I2C2_DO_TX@retFsmState retFsmState `E16535  1 a 1 7 ]
+"386
+[v i2I2C2_DO_TX@dataTx dataTx `uc  1 a 1 6 ]
+"393
+} 0
+"364
+[v i2_I2C2_DO_SEND_ADR_WRITE I2C2_DO_SEND_ADR_WRITE `(E16535  1 s 1 i2_I2C2_DO_SEND_ADR_WRITE ]
+{
+"368
+} 0
+"355
+[v i2_I2C2_DO_SEND_ADR_READ I2C2_DO_SEND_ADR_READ `(E16535  1 s 1 i2_I2C2_DO_SEND_ADR_READ ]
+{
+"362
+} 0
+"349
+[v i2_I2C2_DO_IDLE I2C2_DO_IDLE `(E16535  1 s 1 i2_I2C2_DO_IDLE ]
+{
+"353
+} 0
+"479
+[v i2_I2C2_DO_TX_ACK I2C2_DO_TX_ACK `(E16535  1 s 1 i2_I2C2_DO_TX_ACK ]
+{
+"482
+} 0
+"653
+[v i2_I2C2_MasterIsTxBufEmpty I2C2_MasterIsTxBufEmpty `T(a  1 s 1 i2_I2C2_MasterIsTxBufEmpty ]
+{
+"655
+} 0
+"630
+[v i2_I2C2_MasterIsNack I2C2_MasterIsNack `T(a  1 s 1 i2_I2C2_MasterIsNack ]
+{
+"632
+} 0
+"598
+[v i2_I2C2_MasterGetCounter I2C2_MasterGetCounter `T(uc  1 s 1 i2_I2C2_MasterGetCounter ]
+{
+"600
+} 0
+"625
+[v i2_I2C2_MasterStop@i2c2_master$F3126 I2C2_MasterStop `T(v  1 s 1 i2_I2C2_MasterStop@i2c2_master$F3126 ]
+{
+"628
+} 0
+"638
+[v i2_I2C2_MasterSendNack@i2c2_master$F3141 I2C2_MasterSendNack `T(v  1 s 1 i2_I2C2_MasterSendNack@i2c2_master$F3141 ]
+{
+"640
+} 0
+"634
+[v i2_I2C2_MasterSendAck@i2c2_master$F3136 I2C2_MasterSendAck `T(v  1 s 1 i2_I2C2_MasterSendAck@i2c2_master$F3136 ]
+{
+"636
+} 0
+"649
+[v i2_I2C2_MasterIsRxBufFull I2C2_MasterIsRxBufFull `T(a  1 s 1 i2_I2C2_MasterIsRxBufFull ]
+{
+"651
+} 0
+"590
+[v i2_I2C2_MasterGetRxData@i2c2_master$F3111 I2C2_MasterGetRxData `T(uc  1 s 1 i2_I2C2_MasterGetRxData@i2c2_master$F3111 ]
+{
+"592
+} 0
+"700
+[v i2_I2C2_MasterClearIrq I2C2_MasterClearIrq `T(v  1 s 1 i2_I2C2_MasterClearIrq ]
+{
+"702
+} 0
+"594
+[v i2_I2C2_MasterSendTxData@i2c2_master$F3095 I2C2_MasterSendTxData `T(v  1 s 1 i2_I2C2_MasterSendTxData@i2c2_master$F3095 ]
+{
+[v i2I2C2_MasterSendTxData@i2c2_master$F3095@data data `uc  1 a 1 wreg ]
+[v i2I2C2_MasterSendTxData@i2c2_master$F3095@data data `uc  1 a 1 wreg ]
+[v i2I2C2_MasterSendTxData@i2c2_master$F3095@data data `uc  1 a 1 0 ]
+"596
+} 0
+"602
+[v i2_I2C2_MasterSetCounter I2C2_MasterSetCounter `T(v  1 s 1 i2_I2C2_MasterSetCounter ]
+{
+[v i2I2C2_MasterSetCounter@counter counter `uc  1 a 1 wreg ]
+[v i2I2C2_MasterSetCounter@counter counter `uc  1 a 1 wreg ]
+[v i2I2C2_MasterSetCounter@counter counter `uc  1 a 1 0 ]
+"604
+} 0
+"615
+[v i2_I2C2_MasterEnableRestart@i2c2_master$F3116 I2C2_MasterEnableRestart `T(v  1 s 1 i2_I2C2_MasterEnableRestart@i2c2_master$F3116 ]
+{
+"618
+} 0
+"620
+[v i2_I2C2_MasterDisableRestart I2C2_MasterDisableRestart `T(v  1 s 1 i2_I2C2_MasterDisableRestart ]
+{
+"623
+} 0
+"606
+[v i2_I2C2_MasterResetBus I2C2_MasterResetBus `T(v  1 s 1 i2_I2C2_MasterResetBus ]
+{
+"613
+} 0
+"546
+[v i2_I2C2_CallbackReturnReset I2C2_CallbackReturnReset `(E360  1 e 1 0 ]
+{
+[v i2I2C2_CallbackReturnReset@funPtr funPtr `*.2v  1 p 2 0 ]
+"548
+} 0
+"542
+[v i2_I2C2_CallbackReturnStop I2C2_CallbackReturnStop `(E360  1 e 1 0 ]
+{
+"544
+} 0
+"339
+[v i2_I2C2_ClearInterruptFlags I2C2_ClearInterruptFlags `T(v  1 s 1 i2_I2C2_ClearInterruptFlags ]
+{
+"347
+} 0
+"657
+[v i2_I2C2_MasterIsStopFlagSet I2C2_MasterIsStopFlagSet `T(a  1 s 1 i2_I2C2_MasterIsStopFlagSet ]
+{
+"659
+} 0
+"665
+[v i2_I2C2_MasterIsNackFlagSet I2C2_MasterIsNackFlagSet `T(a  1 s 1 i2_I2C2_MasterIsNackFlagSet ]
+{
+"667
+} 0
+"661
+[v i2_I2C2_MasterIsCountFlagSet I2C2_MasterIsCountFlagSet `T(a  1 s 1 i2_I2C2_MasterIsCountFlagSet ]
+{
+"663
+} 0
+"669
+[v i2_I2C2_MasterClearStopFlag I2C2_MasterClearStopFlag `T(v  1 s 1 i2_I2C2_MasterClearStopFlag ]
+{
+"671
+} 0
+"677
+[v i2_I2C2_MasterClearNackFlag I2C2_MasterClearNackFlag `T(v  1 s 1 i2_I2C2_MasterClearNackFlag ]
+{
+"679
+} 0
+"673
+[v i2_I2C2_MasterClearCountFlag I2C2_MasterClearCountFlag `T(v  1 s 1 i2_I2C2_MasterClearCountFlag ]
+{
+"675
+} 0
+"234 C:\Users\thien\Desktop\Slave_K42_21\Salve_Node_K42.X\mcc_generated_files/uart1.c
+[v _UART1_Receive_ISR UART1_Receive_ISR `(v  1 e 1 0 ]
+{
+"258
+} 0
+"260
+[v _UART1_RxDataHandler UART1_RxDataHandler `(v  1 e 1 0 ]
+{
+"276
+} 0
+"247 C:\Users\thien\Desktop\Slave_K42_21/modbus/modbus_phy_layer_rtu_slave.c
+[v _modbusReceivedDataRS485 modbusReceivedDataRS485 `(v  1 e 1 0 ]
+{
+"248
+[v modbusReceivedDataRS485@c c `uc  1 a 1 4 ]
+"277
+} 0
+"152
+[v i2_modbus_enable_timeout modbus_enable_timeout `(v  1 e 1 0 ]
+{
+[v i2modbus_enable_timeout@enable enable `E16047  1 a 1 wreg ]
+[v i2modbus_enable_timeout@enable enable `E16047  1 a 1 wreg ]
+[v i2modbus_enable_timeout@enable enable `E16047  1 a 1 0 ]
+"154
+} 0
+"188
+[v i2_modbus_calc_crc modbus_calc_crc `(v  1 e 1 0 ]
+{
+[v i2modbus_calc_crc@data data `uc  1 a 1 wreg ]
+"189
+[v i2modbus_calc_crc@uIndex uIndex `uc  1 a 1 1 ]
+"188
+[v i2modbus_calc_crc@data data `uc  1 a 1 wreg ]
+"191
+[v i2modbus_calc_crc@data data `uc  1 a 1 0 ]
+"194
+} 0
