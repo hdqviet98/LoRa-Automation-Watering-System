@@ -1,3 +1,12 @@
+LoRa Automation Watering System
+
+• Learn and study hardware operating principles, features of PIC microcontrollers, LoRa module E22-900T22S, wifi module ATWINC1500, HMI screen Nextion NX3224T024, humidity sensor FS200-SHT20, temperature sensor soil moisture JXBS-3001-TR, wifi security IC ATECC608A, real-time IC DS1307, power IC LM2594 and LM2596.
+• Learn about the protocol Modbus, UART, MQTT, I2C, SPI systems.
+• Hardware design and construction.
+• Write programs for modules of the system.
+• Run test.
+• Write project report.
+
 HMI: code for HMI use on Nextion Editor free (HMI Nextion NX3224T024).
 Master_FJ128_705: Code for Control Center on MPLab X IDE use MCU PICFJ128705.
 Slave_F45_42_relay: Code for Node Relay on MPLab X IDE use MCU PICPICF45K42.
